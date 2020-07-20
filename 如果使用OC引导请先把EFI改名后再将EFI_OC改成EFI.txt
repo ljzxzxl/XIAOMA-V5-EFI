@@ -1,0 +1,11 @@
+Buildclover加入APFSdriverloader.efi
+
+mkdir -p ~/src/edk2/Clover/Patches_for_EDK2/MdePkg/Library/DxeServicesLib/
+
+cat ~/src/edk2/MdePkg/Library/DxeServicesLib/DxeServicesLib.inf | sed -e 's/^.*HobLib/#  HobLib/' > ~/src/edk2/Clover/Patches_for_EDK2/MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
+
+https://www.insanelymac.com/forum/topic/313240-build_clovercommand-another-script-to-build-standard-clover-or-customized/?page=75&tab=comments#comment-2631122
+
+export http_proxy="http://127.0.0.1:1080"
+
+export https_proxy="http://127.0.0.1:1080"
